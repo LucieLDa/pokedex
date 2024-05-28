@@ -1,0 +1,17 @@
+.pokedex {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 70%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    border: solid var(--main-color) 8px;
+}
+
+.pokedex > * {
+    border: solid var(--main-color) 8px;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white var(--main-color);
+    padding: 8px;
+}

@@ -1,0 +1,11 @@
+<div class="pokedex">
+    <ul class="pokedex-list">
+        <h1>Liste des pokemons :</h1>
+        <li *ngFor="let pokemon of pokemonList">
+            <app-pokemon-list (selectPokemonByUser)="onReceiveSelectedPokemon($event)" [pokemon]="pokemon"></app-pokemon-list>
+        </li>
+    </ul>
+    
+    <app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
+</div>
+

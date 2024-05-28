@@ -1,0 +1,10 @@
+<div *ngIf="pokemon != undefined; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock class="pokemon-info">
+    <h1>{{pokemon!.nom}}</h1>
+    <img [src]="pokemon?.imageUrl" alt="image du pokemon {{pokemon!.nom}}">
+    <p>{{pokemon!.description}}</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    Pas de Pokemon selectioné
+</ng-template>

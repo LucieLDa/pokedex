@@ -1,0 +1,22 @@
+nav {
+    background-color: var(--main-color);
+    
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+li {
+    padding: 20px;
+}
+
+li:hover {
+    background-color: aliceblue;
+}

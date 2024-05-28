@@ -1,0 +1,13 @@
+<form #myForm="ngForm" (ngSubmit)="myForm.valid && createPokemon()">
+    <h1>Create a Pokemon !</h1>
+    <label for="pokemonName">Nom</label>
+    <input type="text" name="pokemonName" id="pokemonName" [(ngModel)]="pokemon.nom" #pokemonName="ngModel" minlength="3" required>
+    
+    <label for="pokemonImage">Lien de l'image</label>
+    <input type="url" name="pokemonImage" id="pokemonImage" [(ngModel)]="pokemon.imageUrl" #pokemonImage="ngModel" minlength="3" required pattern="https://.*">
+        
+    <label for="pokemonDescription">Description</label>
+    <textarea rows="4" type="text" name="pokemonDescription" id="pokemonDescription" [(ngModel)]="pokemon.description" #pokemonDescription="ngModel" minlength="3" required></textarea>
+    
+    <button type="submit" [disabled]="!myForm.valid">Ajouter</button>
+</form>

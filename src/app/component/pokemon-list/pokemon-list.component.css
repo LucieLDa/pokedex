@@ -1,0 +1,11 @@
+.pokemon-list {
+    padding: 0.5rem;
+}
+
+.pokemon-list:hover {
+    background-color: var(--main-color);
+}
+
+img {
+    height: 50px;
+}
